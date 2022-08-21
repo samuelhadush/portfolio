@@ -1,0 +1,18 @@
+{
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "globals": {
+    "React": "readonly" // react will available in the global scope as readonly; no need to warn us
+  },
+  "overrides": [
+    {
+      "files": ["*.@(ts|tsx|js|jsx)"],
+      "rules": {
+        // example of overriding a rule
+        // "storybook/hierarchy-separator": "error"
+      }
+    }
+  ],
+  "rules": {
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }] // unused vars will start with _ and when used will be removes/ignored
+  }
+}
