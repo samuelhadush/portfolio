@@ -1,4 +1,5 @@
 import Image from 'next/image';
+// import TextLoop from 'react-text-loop';
 import logo from '../assets/profile.jpg';
 
 type Props = {};
@@ -9,8 +10,12 @@ const Hero = (props: Props) => {
       <div className="mt-24">
         <h4>Welcome, I&apos;m</h4>
         <h1 className="text-4xl font-bold">Samuel Hadush</h1>
-        <div>Full stack engineer</div>
-
+        <div className="text-sm">Full stack engineer</div>
+        {/* <TextLoop>
+          <span> Web Developer.</span>
+          <span> Engineer.</span>
+          <span> Designer.</span>
+        </TextLoop> */}
         {/* Add Space between  introduction and bio */}
         <div className="my-12">
           {/* good bio  */}
@@ -20,16 +25,13 @@ const Hero = (props: Props) => {
             something more with break line for aesthetics.{' '}
           </p>
         </div>
-
         <div>{/* May be Add Resume Downloader here. */}</div>
         <div>
           <button className=" h-12 rounded-md bg-sky-700 px-6 hover:cursor-pointer hover:bg-sky-600">
             <span className="font-medium">Hire Me!</span>
           </button>
         </div>
-
         {/* Call to action / Hire me */}
-
         {/* Social media [github, linkedin, twitter, etc] */}
         <div className="my-4 flex gap-4">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-900 hover:cursor-pointer hover:bg-gray-700 ">
